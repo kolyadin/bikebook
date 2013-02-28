@@ -1,0 +1,47 @@
+<<<<<<< HEAD
+* {font-family: 'Jura', sans-serif;color:#000;font-size:16px;}
+a {color:#203fc6;font-size:16px;}
+a:hover {text-decoration:none;}
+label {cursor: pointer;}
+
+html,body,ul,li {margin:0;padding:0;}
+
+.cl {clear:both;}
+.page {width:980px;padding:20px;margin:0 auto;border:1px solid red;}
+
+.page p {margin:15px 0;padding:0}
+
+ul.top-menu {list-style-type:none;}
+ul.top-menu li {float:left;margin-right:15px;padding-top:12px;}
+ul.top-menu li.logo-element {padding-top:0;margin-right:30px;}
+
+ul.top-menu li.logo-element a {font-size:38px;font-weight:bold;}
+
+=======
+html,body,ul {margin:0;padding:0;}
+
+.cl {clear:both;}
+.page {width:980px;margin:0 auto;border:1px solid red;}
+
+.logo-element {font-size:24px;font-weight:bold;}
+ul.top-menu {list-style-type:none;}
+ul.top-menu li {float:left;margin-right:10px;}
+>>>>>>> origin/master
+
+/* Стили для ссылки SOS */
+ul.top-menu .sos {color:red;}
+
+<<<<<<< HEAD
+ul.main-menu {list-style-type:none;margin-top:10px;background-color:#d7d8d7;height:25px;}
+ul.main-menu li {float:left;margin-right:20px;height:25px;padding-top:0.2em;}
+ul.main-menu li:first-child {margin-left:10px;}
+
+input.text-middle {width:300px;font-size:20px;}
+
+
+#progressBar-pwd {position:relative;left:10px;display:none;}
+#progressSummary-pwd {display:none;}
+=======
+ul.main-menu {list-style-type:none;margin-top:30px;background-color:#d7d8d7;height:25px;}
+ul.main-menu li {float:left;margin-right:20px;height:25px;padding-top:2px;}
+>>>>>>> origin/master

@@ -1,0 +1,21 @@
+{% extends "/common/content.twig" %}
+
+{% block title %}
+    {{ parent() }} | Новости
+{% endblock %}
+
+{% block head %}
+    {{ parent() }}
+{% endblock %}
+
+{% block content %}
+
+<p>В данном варианте я хочу многое вам сказать
+
+{% for row in list %}
+
+    <p><a href="/news/{{ row['id'] }}">{{ row['title']|e }}</a></p>
+
+{% endfor %}
+
+{% endblock %}

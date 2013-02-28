@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+{% block head %}
+
+    <title>{% spaceless %}{% block title %}Bikebook.loc{{ title }}{% endblock %}{% endspaceless %}</title>
+
+    <link href='http://fonts.googleapis.com/css?family=Jura:400,300,500,600&subset=latin,cyrillic,latin-ext' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" type="text/css" href="/css/bikebook.css"/>
+
+    <script type="text/javascript" src="http://yandex.st/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.autoGrowInput.min.js"></script>
+
+    {#
+    {% spaceless %}
+    {{
+        js([
+            ['/js/jquery-1.8.3.min.js'],
+            ['/js/jquery-ui-1.9.2.min.js'],
+            ['/js/jquery.ui.datepicker-ru.js'],
+            ['/js/jquery.fancybox.js'],
+            ['/js/jquery.mousewheel.js'],
+            ['/js/jquery.uploadify.min.js'],
+            ['/js/jquery.filter_input.js'],
+            ['/js/ckeditor/ckeditor.js'],
+            ['/js/sprintf.js'],
+            ['/js/admin.js'],
+            ['/js/kaelement.js'],
+        ])
+    }}
+    {% endspaceless %}
+    #}
+{% endblock %}
+</head>
+<body>
+    <div class="page">
+        <ul class="top-menu">
+<<<<<<< HEAD
+            <li class="logo-element"><a href="/">BikeBook</a></li>
+=======
+            <li><a href="/" class="logo-element">BikeBook</a></li>
+>>>>>>> origin/master
+            <li><a href="/new-biker">Стать постоянным участником</a></li>
+            <li>{% spaceless %}
+                {% if user.who == 'robot' %}
+                    <a href="/verification">Авторизация</a>
+                {% elseif user.who == 'user' %}
+                    <a href="/verification/exit/?hash={{ user.data.exitHash }}">Выйти</a>
+                {% endif %}
+            {% endspaceless %}</li>
+            <li><a href="/sos" class="sos">Сигнал SOS</a></li>
+        </ul>
+        <div class="cl"></div>
+
+        <ul class="main-menu">
+            <li><a href="/our-bikers">Наши люди</a></li>
+            <li><a href="/motonovosti">Новости МотоМира</a></li>
+            <li><a href="/bikes-rating">Рейтинг мотоциклов</a></li>
+<<<<<<< HEAD
+            <li><a href="/store">BikeBook магазин</a></li>
+=======
+            <li><a href="/bikes-rating">BikeBook магазин</a></li>
+>>>>>>> origin/master
+        </ul>
+        <div class="cl"></div>
+
+
+
+
+
+        {% block content %}{% endblock %}
+    </div>
+</body>
+</html>

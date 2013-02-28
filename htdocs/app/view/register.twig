@@ -1,0 +1,25 @@
+{% extends "/common/content.twig" %}
+
+{% block title %}
+    {{ parent() }} | Регистрация на сайте
+{% endblock %}
+
+{% block head %}
+    {{ parent() }}
+{% endblock %}
+
+{% block content %}
+
+    <form method="post" action="/new-biker/check">
+
+        <p>Мыло&nbsp;<input type="text" name="reg-email">
+        <p>Пароль&nbsp;<input type="password" name="reg-pwd">
+
+        <p>Пол<br/>
+            Мужской&nbsp;<input type="radio" name="reg-sex" value="man" checked />
+            Женский&nbsp;<input type="radio" name="reg-sex" value="woman" />
+
+        <p><input type="submit" value="ok" />
+    </form>
+
+{% endblock %}
