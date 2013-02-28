@@ -17,7 +17,6 @@ class front extends KaController
 		$foto1 = $this->app->resizer()->resize('/upload/d5/e0/a1/c.jpg','{"w":120,"z":"1"}');
 
 
-
 		/*
 		$foto2 = $this->app->resizer()->resize('/upload/d5/e0/a1/c.jpg','{"w":121,"z":5}');
 		$foto3 = $this->app->resizer()->resize('/upload/d5/e0/a1/c.jpg','{"w":122,"z":5}');

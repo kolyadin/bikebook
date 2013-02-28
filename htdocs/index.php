@@ -53,7 +53,6 @@ $router->setRuleCallback('GET /verification/exit/', function() use ($app) {
 	$app->router()->call('/auth/logOut')->run();
 });
 
-<<<<<<< HEAD
 //Напоминание пароля
 $router->setRuleCallback('GET /verification/forgot-password', function() use ($app) {
 	$app->router()->call('/auth/forgotPwd')->run();
@@ -64,8 +63,6 @@ $router->setRuleCallback('GET /verification/forgot-password/ajax', function() us
 	$app->router()->call('/auth/forgotPwdAjax')->run();
 });
 
-=======
->>>>>>> origin/master
 //Страница регистрации
 $router->setRuleCallback('GET /new-biker', function() use ($app) {
 	$app->router()->call('/register/registerPage')->run();
@@ -97,13 +94,3 @@ printf("\n\n<br/><br/>%.6f<br/>%s"
 	,$usageMemory(memory_get_usage())
 );
 */
-
-<<<<<<< HEAD
-#print $app->genTime();
-#$app->stopwatch()->dump();
-=======
-print $app->genTime();
-$app->stopwatch()->dump();
->>>>>>> origin/master
-
-#print '<pre>'.print_r($app->mysqli()->q,true).'</pre>';

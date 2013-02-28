@@ -61,6 +61,7 @@ class __TwigTemplate_bc6d712edb1f8235c3270c13d0104e14 extends Twig_Template
             <li><a href=\"/motonovosti\">Новости МотоМира</a></li>
             <li><a href=\"/bikes-rating\">Рейтинг мотоциклов</a></li>
             <li><a href=\"/store\">BikeBook магазин</a></li>
+            <li><a href=\"/bikes-rating\">BikeBook магазин</a></li>
         </ul>
         <div class=\"cl\"></div>
 
@@ -69,9 +70,9 @@ class __TwigTemplate_bc6d712edb1f8235c3270c13d0104e14 extends Twig_Template
 
 
         ";
-        // line 64
-        $this->displayBlock('content', $context, $blocks);
         // line 65
+        $this->displayBlock('content', $context, $blocks);
+        // line 66
         echo "    </div>
 </body>
 </html>";
@@ -105,7 +106,7 @@ class __TwigTemplate_bc6d712edb1f8235c3270c13d0104e14 extends Twig_Template
         echo (isset($context["title"]) ? $context["title"] : null);
     }
 
-    // line 64
+    // line 65
     public function block_content($context, array $blocks = array())
     {
     }
@@ -122,6 +123,6 @@ class __TwigTemplate_bc6d712edb1f8235c3270c13d0104e14 extends Twig_Template
 
     public function getDebugInfo()
     {
-        return array (  109 => 64,  87 => 6,  84 => 5,  81 => 4,  75 => 65,  73 => 64,  52 => 47,  46 => 45,  42 => 43,  39 => 42,  37 => 41,  29 => 35,  27 => 4,  22 => 1,  97 => 49,  80 => 34,  58 => 14,  56 => 13,  53 => 12,  50 => 11,  43 => 8,  40 => 7,  33 => 4,  30 => 3,);
+        return array (  110 => 65,  88 => 6,  85 => 5,  82 => 4,  76 => 66,  74 => 65,  52 => 47,  46 => 45,  42 => 43,  39 => 42,  37 => 41,  29 => 35,  27 => 4,  22 => 1,);
     }
 }

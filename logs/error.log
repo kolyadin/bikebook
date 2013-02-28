@@ -533,3 +533,11 @@
 [Wed Feb 27 17:56:10 2013] [error] [client 192.168.0.183] PHP Fatal error:  Call to a member function logOut() on a non-object in /data/sites/bikebook.loc/htdocs/app/controller/auth.php on line 50, referer: http://bikebook.loc/verification
 [Wed Feb 27 17:56:10 2013] [error] [client 192.168.0.183] PHP Fatal error:  Call to a member function logOut() on a non-object in /data/sites/bikebook.loc/htdocs/app/controller/auth.php on line 50, referer: http://bikebook.loc/verification
 [Wed Feb 27 17:56:24 2013] [error] [client 192.168.0.183] PHP Fatal error:  Class 'KaHeaders' not found in /data/sites/bikebook.loc/htdocs/app/controller/auth.php on line 57, referer: http://bikebook.loc/verification
+[Thu Feb 28 17:11:12 2013] [error] [client 192.168.0.183] PHP Parse error:  syntax error, unexpected '<<' (T_SL) in /data/sites/bikebook.loc/htdocs/index.php on line 56
+[Thu Feb 28 17:11:12 2013] [error] [client 192.168.0.183] PHP Parse error:  syntax error, unexpected '<<' (T_SL) in /data/sites/bikebook.loc/htdocs/index.php on line 56
+[Thu Feb 28 17:11:12 2013] [error] [client 192.168.0.183] PHP Parse error:  syntax error, unexpected '<<' (T_SL) in /data/sites/bikebook.loc/htdocs/index.php on line 56
+[Thu Feb 28 17:11:12 2013] [error] [client 192.168.0.183] PHP Parse error:  syntax error, unexpected '<<' (T_SL) in /data/sites/bikebook.loc/htdocs/index.php on line 56
+[Thu Feb 28 17:11:13 2013] [error] [client 192.168.0.183] PHP Parse error:  syntax error, unexpected '<<' (T_SL) in /data/sites/bikebook.loc/htdocs/index.php on line 56
+[Thu Feb 28 17:11:13 2013] [error] [client 192.168.0.183] PHP Parse error:  syntax error, unexpected '<<' (T_SL) in /data/sites/bikebook.loc/htdocs/index.php on line 56
+[Thu Feb 28 17:11:13 2013] [error] [client 192.168.0.183] PHP Parse error:  syntax error, unexpected '<<' (T_SL) in /data/sites/bikebook.loc/htdocs/index.php on line 56
+[Thu Feb 28 17:11:13 2013] [error] [client 192.168.0.183] PHP Parse error:  syntax error, unexpected '<<' (T_SL) in /data/sites/bikebook.loc/htdocs/index.php on line 56
