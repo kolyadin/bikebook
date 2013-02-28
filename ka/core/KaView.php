@@ -44,7 +44,7 @@ class KaView
 		$loader = new Twig_Loader_Filesystem($config->globals['viewPath']);
 
 		$twig = new Twig_Environment($loader, array(
-			'cache' => $config->globals['viewPath'].'/_cache',
+			'cache' => $config->globals['PROJECT_ROOT'].'/data/twig-cache',
 			'auto_reload' => $config->isDebugMode() ? true : false,
 			'autoescape'  => false
 		));
