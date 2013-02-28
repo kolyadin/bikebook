@@ -59,17 +59,24 @@ class __TwigTemplate_316ac4af2a83912f4b8a3433ccbe07d7 extends Twig_Template
         <script>
             \$(function(){
 
+                \$('body').append('<span id=\"_countWidth\" style=\"position:absolute;top:-9999px;display:none;font-size:20px;\"></span>');
+
+                var textWidth = '0px';
+
                 \$('#input-email')
                 .focus()
                 .keyup(function(){
+                    textWidth = \$('#_countWidth').text(\$(this).val()).width();
+
                     \$(this).animate({
                         width:\$(this).val().length < 8 ? '120px' : (80+Math.round(\$(this).val().length*8))+'px'
                     },100);
                 })
                 .focus(function(){
-                    //\$(this).css({/*'text-align':'left',*/'background-color':'#fff'});
+                    \$(this).css({'background-color':'#fff'});
                 })
                 .focusout(function(){
+                    \$(this).css('width',parseInt(\$(this).css('width')) > 120 ? textWidth+'px' : '120px');
                     //\$(this).css({/*'text-align':'center',*/'background-color':'#b0dead'});
                 });
 
@@ -80,18 +87,21 @@ class __TwigTemplate_316ac4af2a83912f4b8a3433ccbe07d7 extends Twig_Template
                     \$('#progressBar-pwd').show();
                     \$('#progressSummary-pwd').hide();
 
-
                     \$.getJSON('/verification/forgot-password/ajax',{'email':\$('#input-email').val()},function(data){
-                        if (data.error == 'no_email')
+                        if (data.status == 'no_email')
                         {
-                            \$('#progressSummary-pwd').show('fast').html('Укаказан неверный адрес, попробуйте снова.');
+                            \$('#progressSummary-pwd').show('fast').html('Укаказан неверный адрес, попробуйте снова.').css('color','red');
                             \$('#goButton').css('color','#000').attr('disabled',false);
+
+                            \$('#input-email').css('background-color','#d29c9c');
+
                             \$('#progressBar-pwd').hide();
                         }
-                        else
+                        else if (data.status == 'success')
                         {
-                            \$('#progressSummary-pwd').show('fast');
+                            \$('#progressSummary-pwd').show('fast').html('... теперь проверь свой почтовый ящик!').css('color','#000');
                             \$('#progressBar-pwd').hide();
+                            \$('#input-email').css('background-color','#b8dbb2');
                         }
                     });
                 });
@@ -102,12 +112,12 @@ class __TwigTemplate_316ac4af2a83912f4b8a3433ccbe07d7 extends Twig_Template
 
         <p>Как же так получилось? :) Ладно, просто введи адрес своей электронной почты:
         <p><input type=\"email\" id=\"input-email\" class=\"text-middle\" style=\"width:120px;padding:3px;\" /><span id=\"progressBar-pwd\"><img src=\"/i/loader1.gif\" /></span>
-        <p id=\"progressSummary-pwd\">Проверьте вашу электронную почту</p>
+        <p id=\"progressSummary-pwd\"></p>
         <p><input type=\"button\" id=\"goButton\" style=\"font-weight:bold;padding:3px 10px 3px 10px;\" value=\"отправить письмо с инструкцией\" /></p>
 
     ";
         } else {
-            // line 65
+            // line 75
             echo "
         <h1>Привет! Заходи!</h1>
 
@@ -124,7 +134,7 @@ class __TwigTemplate_316ac4af2a83912f4b8a3433ccbe07d7 extends Twig_Template
 
     ";
         }
-        // line 80
+        // line 90
         echo "
 ";
     }
@@ -141,6 +151,6 @@ class __TwigTemplate_316ac4af2a83912f4b8a3433ccbe07d7 extends Twig_Template
 
     public function getDebugInfo()
     {
-        return array (  128 => 80,  111 => 65,  58 => 14,  56 => 13,  53 => 12,  50 => 11,  43 => 8,  40 => 7,  33 => 4,  30 => 3,);
+        return array (  138 => 90,  121 => 75,  58 => 14,  56 => 13,  53 => 12,  50 => 11,  43 => 8,  40 => 7,  33 => 4,  30 => 3,);
     }
 }

@@ -25,7 +25,7 @@ class __TwigTemplate_bc6d712edb1f8235c3270c13d0104e14 extends Twig_Template
 ";
         // line 4
         $this->displayBlock('head', $context, $blocks);
-        // line 35
+        // line 36
         echo "</head>
 <body>
     <div class=\"page\">
@@ -33,22 +33,22 @@ class __TwigTemplate_bc6d712edb1f8235c3270c13d0104e14 extends Twig_Template
             <li class=\"logo-element\"><a href=\"/\">BikeBook</a></li>
             <li><a href=\"/new-biker\">Стать постоянным участником</a></li>
             <li>";
-        // line 41
-        ob_start();
         // line 42
+        ob_start();
+        // line 43
         echo "                ";
         if (($this->getAttribute((isset($context["user"]) ? $context["user"] : null), "who") == "robot")) {
-            // line 43
+            // line 44
             echo "                    <a href=\"/verification\">Авторизация</a>
                 ";
         } elseif (($this->getAttribute((isset($context["user"]) ? $context["user"] : null), "who") == "user")) {
-            // line 45
+            // line 46
             echo "                    <a href=\"/verification/exit/?hash=";
             echo $this->getAttribute($this->getAttribute((isset($context["user"]) ? $context["user"] : null), "data"), "exitHash");
             echo "\">Выйти</a>
                 ";
         }
-        // line 47
+        // line 48
         echo "            ";
         echo trim(preg_replace('/>\s+</', '><', ob_get_clean()));
         echo "</li>
@@ -70,9 +70,9 @@ class __TwigTemplate_bc6d712edb1f8235c3270c13d0104e14 extends Twig_Template
 
 
         ";
-        // line 65
-        $this->displayBlock('content', $context, $blocks);
         // line 66
+        $this->displayBlock('content', $context, $blocks);
+        // line 67
         echo "    </div>
 </body>
 </html>";
@@ -92,6 +92,7 @@ class __TwigTemplate_bc6d712edb1f8235c3270c13d0104e14 extends Twig_Template
 
     <link href='http://fonts.googleapis.com/css?family=Jura:400,300,500,600&subset=latin,cyrillic,latin-ext' rel='stylesheet' type='text/css'>
 
+
     <link rel=\"stylesheet\" type=\"text/css\" href=\"/css/bikebook.css\"/>
 
     <script type=\"text/javascript\" src=\"http://yandex.st/jquery/1.9.1/jquery.min.js\"></script>
@@ -106,7 +107,7 @@ class __TwigTemplate_bc6d712edb1f8235c3270c13d0104e14 extends Twig_Template
         echo (isset($context["title"]) ? $context["title"] : null);
     }
 
-    // line 65
+    // line 66
     public function block_content($context, array $blocks = array())
     {
     }
@@ -123,6 +124,6 @@ class __TwigTemplate_bc6d712edb1f8235c3270c13d0104e14 extends Twig_Template
 
     public function getDebugInfo()
     {
-        return array (  110 => 65,  88 => 6,  85 => 5,  82 => 4,  76 => 66,  74 => 65,  52 => 47,  46 => 45,  42 => 43,  39 => 42,  37 => 41,  29 => 35,  27 => 4,  22 => 1,);
+        return array (  111 => 66,  88 => 6,  85 => 5,  82 => 4,  76 => 67,  74 => 66,  52 => 48,  46 => 46,  42 => 44,  39 => 43,  37 => 42,  29 => 36,  27 => 4,  22 => 1,);
     }
 }

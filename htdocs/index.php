@@ -63,6 +63,12 @@ $router->setRuleCallback('GET /verification/forgot-password/ajax', function() us
 	$app->router()->call('/auth/forgotPwdAjax')->run();
 });
 
+//Сигнал SOS
+$router->setRuleCallback('GET /sos', function() use ($app) {
+	$app->router()->call('/sos/indexPage')->run();
+});
+
+
 //Страница регистрации
 $router->setRuleCallback('GET /new-biker', function() use ($app) {
 	$app->router()->call('/register/registerPage')->run();
@@ -87,6 +93,8 @@ $usageMemory = function($bytes)
 
 	return sprintf('%.2f b',$bytes);//Байты
 };
+
+print $app->genTime();
 
 /*
 printf("\n\n<br/><br/>%.6f<br/>%s"

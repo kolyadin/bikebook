@@ -49,11 +49,14 @@ class auth extends KaController
 			,$this->app->mysqli()->escape($_GET['email'])
 		);
 
-		if (!$result->num_rows) die(json_encode(array('error'=>'no_email')));
+		if (!$result->num_rows) die(json_encode(array('status' => 'no_email')));
 
 		list($email) = $result->fetch_row();
 
-		die(json_encode(array('email'=>$email)));
+		die(json_encode(array(
+			'email'  => $email,
+			'status' => 'success'
+		)));
 	}
 
 	public function forgotPwd()
